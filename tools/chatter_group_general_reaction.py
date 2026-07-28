@@ -465,8 +465,8 @@ def _build_statement_prompt(
         )
     else:
         prompt += (
-            "Sound like a normal WoW player. Keep it "
-            "brief and casual.\n"
+            "Sound like a real WoW player typing in "
+            "chat — casual, a bit slangy, brief.\n"
         )
     return append_json_instruction(
         prompt,

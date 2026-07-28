@@ -224,9 +224,13 @@ def build_bot_greeting_prompt(
         )
     else:
         style_guide = (
-            "Sound like a normal person chatting "
-            "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "Sound like a real WoW player in "
+            "party chat — casual, a bit slangy, "
+            "maybe a little salty. Internet "
+            "abbreviations and gamer shorthand are "
+            "totally normal here (lol, ngl, tbh, "
+            "gg, skill issue, mid, etc.) — this "
+            "isn't formal writing."
         )
 
     # Location context: BG > dungeon > zone flavor
@@ -504,9 +508,13 @@ def build_bot_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a normal person chatting "
-            "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "Sound like a real WoW player in "
+            "party chat — casual, a bit slangy, "
+            "maybe a little salty. Internet "
+            "abbreviations and gamer shorthand are "
+            "totally normal here (lol, ngl, tbh, "
+            "gg, skill issue, mid, etc.) — this "
+            "isn't formal writing."
         )
 
     prompt = (
@@ -639,9 +647,13 @@ def build_batch_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a normal person chatting "
-            "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "Sound like a real WoW player in "
+            "party chat — casual, a bit slangy, "
+            "maybe a little salty. Internet "
+            "abbreviations and gamer shorthand are "
+            "totally normal here (lol, ngl, tbh, "
+            "gg, skill issue, mid, etc.) — this "
+            "isn't formal writing."
         )
 
     names_str = ', '.join(new_bot_names)
@@ -3779,9 +3791,10 @@ def build_nearby_object_reaction_prompt(
     else:
         style = (
             "Make a brief comment about what you see "
-            "as a regular WoW player — could be any "
-            "age, mature and grounded. Natural "
-            "reaction, as a player not a character."
+            "like a real WoW player typing in party "
+            "chat — casual, maybe a little slangy or "
+            "sarcastic. Natural reaction, as a player "
+            "not a character."
         )
     prompt += (
         f"\nYou notice the following nearby:\n"

@@ -314,19 +314,29 @@ def build_dynamic_guidelines(
         ]
     else:
         guidelines = [
-            "Sound like a real player, not an NPC",
+            "Sound like a real, slightly-online WoW "
+            "player typing in chat — not an NPC, not "
+            "a tour guide, not flowery or poetic",
             "NEVER use brackets [] around names "
             "(quests, items, zones, creatures, NPCs, "
             "factions) - write everything as plain "
             "text. Only use {quest:Name}, "
             "{item:Name}, or {spell:Name} "
             "placeholders when explicitly told to.",
-            "Prefer full words over internet slang "
-            "— use abbreviations sparingly, not in "
-            "every message (lol, omg, ngl, tbh are "
-            "ok occasionally). Basic WoW terms are "
-            "always fine (dps, tank, healer, gg, "
-            "buff, nerf, aggro).",
+            "Lean into internet/gamer slang and "
+            "abbreviations naturally: lol, lmao, ngl, "
+            "tbh, fr, imo, ikr, bruh, ong, no cap, W, "
+            "L, ratio, mid, cope, based, cringe, "
+            "skill issue, git gud. Don't cram them "
+            "all into one message — pick what fits "
+            "and vary it, like a real person typing.",
+            "A little edge is welcome: light sarcasm, "
+            "trash talk, gatekeeping about gear/DPS, "
+            "grumbling about bad groups or 'this game "
+            "is dying' energy. Keep it playful and "
+            "salty like trade chat banter — never "
+            "actual harassment, slurs, or targeted "
+            "hate toward real people.",
         ]
 
     length_pool = RP_LENGTH_HINTS if is_rp else LENGTH_HINTS
@@ -377,7 +387,11 @@ def build_dynamic_guidelines(
             )
         else:
             guidelines.append(
-                "A touch of humor fits here"
+                random.choice([
+                    "A touch of humor fits here",
+                    "Dry/sarcastic humor fits here",
+                    "A meme-y or gamer-culture joke fits here",
+                ])
             )
 
     if is_rp:
@@ -395,6 +409,9 @@ def build_dynamic_guidelines(
             "Can include a typo for realism",
             "Casual and natural chat style",
             "Brief and direct",
+            "Drop a meme/gamer cliché if it fits "
+            "(skill issue, copium, mid, ratio, W/L)",
+            "A bit of playful trash talk is fine here",
         ]
     if random.random() < 0.5:
         guidelines.append(random.choice(extras))

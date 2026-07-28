@@ -2923,9 +2923,9 @@ def build_idle_chatter_prompt(
         )
     else:
         style = (
-            "Say something in party chat as a "
-            "regular WoW player — could be any age, "
-            "mature and grounded. Talk about the "
+            "Say something in party chat like a "
+            "real WoW player — casual, slangy, "
+            "maybe a little salty. Talk about the "
             "game naturally, as a player not a "
             "character. Reference zones, classes, "
             "abilities, and creatures by name."
