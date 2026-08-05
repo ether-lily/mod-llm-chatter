@@ -2068,8 +2068,10 @@ TONES = [
     "gremlin energy, unhinged but harmless",
     "trash-talking but good-natured",
     "smug about being right",
-    "low-key gatekeeping",
+    "bit of a gatekeeper",
     "meme-brained",
+    "4chan/Teamspeak/Discord shitposter",
+    "millennial age. avoid zoomer/gen alpha slang",
 ]
 
 # Mood variations - the emotional angle of the message
@@ -2102,12 +2104,14 @@ MOODS = [
     "finding everything hilarious",
     "cracking wise",
     "dry and snarky",
+    "just being a little silly",
     # Online/internet-culture moods
     "roasting someone playfully",
     "trolling a little",
     "unimpressed and vocal about it",
     "salty about RNG",
     "smugly correct",
+    "shitposter",
 ]
 
 # Creative twists - random modifiers to push creativity (picked ~30% of the time)
@@ -2165,12 +2169,11 @@ CREATIVE_TWISTS = [
     "Make a self-deprecating joke",
     "Find an absurd silver lining",
     # Internet slang / meme twists
-    "Use a gamer meme phrase naturally (skill issue, mid, cope, based, ratio, no cap, W/L, git gud)",
+    "Use a gamer meme phrase naturally (skill issue, rekt, owned, cope, based, git gud)",
     "Type in all-lowercase for effect",
     "Give a mock-serious 'skill issue' callout",
-    "Drop a light 'L + ratio' style jab, playful not mean",
-    "React like it's a Reddit/Discord comment, not a tavern conversation",
-    "Reference stream/Discord/Twitch culture briefly",
+    "React like it's a 4chan/Discord comment, not a tavern conversation",
+    "Reference stream/Discord/Twitch/4chan culture briefly",
     "Gatekeep something minor as a joke (e.g. 'real ones remember...')",
 ]
 
@@ -2304,7 +2307,7 @@ MESSAGE_CATEGORIES = [
     "complaining about queue times or bad RNG",
     "skill-issue style callout, lighthearted",
     "copypasta-style short rant",
-    "reacting like a Reddit or Discord comment",
+    "reacting like a 4chan or Discord comment",
     "smug 'told you so' moment",
     "nostalgia bait about vanilla/classic/old content",
     # Zone/world commentary (grounded, not lore-heavy)
@@ -2924,7 +2927,7 @@ PERSONALITY_SPICES = [
     "you're internally rolling your eyes at chat right now",
     "you're mildly judging someone's gear choices",
     "you're trying not to backseat too hard",
-    "you're low-key flexing about a recent achievement",
+    "you're flexing about a recent achievement",
     "you're a little smug about calling something correctly",
     "you're holding back a 'told you so'",
     "you're quietly unbothered by the drama in guild chat",
