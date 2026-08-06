@@ -324,9 +324,11 @@ def build_dynamic_guidelines(
             "{item:Name}, or {spell:Name} "
             "placeholders when explicitly told to.",
             "Lean into internet/gamer slang and "
-            "abbreviations naturally: lol, lmao, ngl, "
-            "tbh, fr, imo, ikr, bruh, ong, no cap, W, "
-            "L, ratio, mid, cope, based, cringe, "
+            "abbreviations naturally: lol, lmao, legit, "
+            "tbh, imo, ikr, kek, smh, irl, fml, "
+            "atm, omg, pleb, cope, based, cringe, "
+            "normie, normalfag, newfag, oldfag, "
+            "mfw, tfw, mrw, lel, omfg, lul, LUL, "
             "skill issue, git gud. Don't cram them "
             "all into one message — pick what fits "
             "and vary it, like a real person typing.",
@@ -335,7 +337,7 @@ def build_dynamic_guidelines(
             "grumbling about bad groups or 'this game "
             "is dying' energy. Keep it playful and "
             "salty like trade chat banter — never "
-            "actual harassment, slurs, or targeted "
+            "actual harassment, overly toxic or targeted "
             "hate toward real people.",
         ]
 
@@ -410,7 +412,7 @@ def build_dynamic_guidelines(
             "Casual and natural chat style",
             "Brief and direct",
             "Drop a meme/gamer cliché if it fits "
-            "(skill issue, copium, mid, ratio, W/L)",
+            "(skill issue, cope, pleb, git gud, newfag)",
             "A bit of playful trash talk is fine here",
         ]
     if random.random() < 0.5:
