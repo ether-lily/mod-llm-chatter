@@ -224,12 +224,12 @@ def build_bot_greeting_prompt(
         )
     else:
         style_guide = (
-            "Sound like a real WoW player in "
+            "Sound like a real 2004-2008 WoW player in "
             "party chat — casual, a bit slangy, "
             "maybe a little salty. Internet "
             "abbreviations and gamer shorthand are "
             "totally normal here (lol, ikr, tbh, "
-            "gg, skill issue, kek, imo, etc.) — this "
+            "gg, scrub, kek, imo, etc.) — this "
             "isn't formal writing."
         )
 
@@ -508,12 +508,12 @@ def build_bot_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a real WoW player in "
+            "Sound like a real 2004-2008 WoW player in "
             "party chat — casual, a bit slangy, "
             "maybe a little salty. Internet "
             "abbreviations and gamer shorthand are "
             "totally normal here (lol, ikr, tbh, "
-            "gg, skill issue, kek, imo, etc.) — this "
+            "gg, scrub, kek, imo, etc.) — this "
             "isn't formal writing."
         )
 
@@ -647,12 +647,12 @@ def build_batch_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a real WoW player in "
+            "Sound like a real 2004-2008 WoW player in "
             "party chat — casual, a bit slangy, "
             "maybe a little salty. Internet "
             "abbreviations and gamer shorthand are "
-            "totally normal here (lol, ngl, tbh, "
-            "gg, skill issue, mid, etc.) — this "
+            "totally normal here (lol, kek, tbh, "
+            "gg, scrub, imo, etc.) — this "
             "isn't formal writing."
         )
 
