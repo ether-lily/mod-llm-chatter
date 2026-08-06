@@ -468,10 +468,10 @@ def _build_general_response_prompt(
         f"mfw, tfw, mrw, lel, brb, legit, an hero, "
         f"scrub, owned, pwned, l2p noob, gg, gl hf, "
         f"butthurt, screwed, bs, straight up, rofl, "
-        f"based, cringe, skill issue, git gud. Don't "
+        f"based, cringe, omw, nvm, btw, git gud. Don't "
         f"use them all in one message, but don't hold "
         f"back either — sound like a real online "
-        f"player, an MMO gamer, not a formal writer. Basic WoW "
+        f"player, a 2004-2008 MMO gamer, not a formal writer. Basic WoW "
         f"terms always fine (dps, tank, healer, gg, "
         f"buff, nerf)\n"
         f"- NEVER use brackets [] around creature, "
@@ -488,6 +488,13 @@ def _build_general_response_prompt(
         f"- Speak as if it's 2004-2008\n"
         f"- Avoid talking like gen alpha, or young gen z, "
         f"act closer to Millennial\n"
+        f"- strictly pre-2009 internet lexicon ONLY, "
+        f"zero modern, zoomer, or gen-alpha slang\n"
+        f"- Avoid modern social media phrasing\n"
+        f"- banned terms: cap, no cap, mid, rizz, sus, "
+        f"bet, ratio, cooked, flex, hit different, "
+        f"main character, rent free, letting them cook, "
+        f"skill issue, copium, W/L, low-key\n"
     )
     spices = pick_personality_spices(
         mode=mode, spice_count_override=_spice_count
@@ -635,7 +642,7 @@ def _build_general_followup_prompt(
         f"mfw, tfw, mrw, lel, brb, legit, an hero, "
         f"scrub, owned, pwned, l2p noob, gg, gl hf, "
         f"butthurt, screwed, bs, straight up, rofl, "
-        f"based, cringe, skill issue, git gud. Don't "
+        f"based, cringe, omw, nvm, btw, git gud. Don't "
         f"use them all in one message, but don't hold "
         f"back either — sound like a real online "
         f"player, an MMO gamer, not a formal writer. Basic WoW "
@@ -651,6 +658,13 @@ def _build_general_followup_prompt(
         f"- Speak as if it's 2004-2008\n"
         f"- Avoid talking like gen alpha, or young gen z, "
         f"act closer to Millennial\n"
+        f"- strictly pre-2009 internet lexicon ONLY, "
+        f"zero modern, zoomer, or gen-alpha slang\n"
+        f"- Avoid modern social media phrasing\n"
+        f"- banned terms: cap, no cap, mid, rizz, sus, "
+        f"bet, ratio, cooked, flex, hit different, "
+        f"main character, rent free, letting them cook, "
+        f"skill issue, copium, W/L, low-key\n"
     )
     spices = pick_personality_spices(
         mode=mode, spice_count_override=_spice_count
@@ -1293,7 +1307,7 @@ def _build_general_continuation_prompt(
         f"mfw, tfw, mrw, lel, brb, legit, an hero,"
         f"scrub, owned, pwned, l2p noob, gg, gl hf, "
         f"butthurt, screwed, bs, straight up, rofl, "
-        f"based, cringe, skill issue, git gud. Don't "
+        f"based, cringe, omw, nvm, btw, git gud. Don't "
         f"use them all in one message, but don't hold "
         f"back either — sound like a real online "
         f"player, an MMO gamer, not a formal writer. Basic WoW "
@@ -1309,6 +1323,13 @@ def _build_general_continuation_prompt(
         f"- Speak as if it's 2004-2008\n"
         f"- Avoid talking like gen alpha, or young gen z, "
         f"act closer to Millennial\n"
+        f"- strictly pre-2009 internet lexicon ONLY, "
+        f"zero modern, zoomer, or gen-alpha slang\n"
+        f"- Avoid modern social media phrasing\n"
+        f"- banned terms: cap, no cap, mid, rizz, sus, "
+        f"bet, ratio, cooked, flex, hit different, "
+        f"main character, rent free, letting them cook, "
+        f"skill issue, copium, W/L, low-key\n"
     )
     if remaining_messages <= 2:
         prompt += (
