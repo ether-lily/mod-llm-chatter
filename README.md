@@ -1,3 +1,7 @@
+**"LLMChatter.Memory.IdentityVersion" bump needed to force all bots to regenerate their persistent personality**
+
+---
+
 <p align="center">
   <img src="images/banner.jpg" alt="The Chatters" width="100%">
 </p>
