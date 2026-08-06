@@ -314,7 +314,7 @@ def build_dynamic_guidelines(
         ]
     else:
         guidelines = [
-            "Sound like a real, slightly-online WoW "
+            "Sound like a real, slightly-online 2004-2008 WoW "
             "player typing in chat — not an NPC, not "
             "a tour guide, not flowery or poetic",
             "NEVER use brackets [] around names "
@@ -323,20 +323,22 @@ def build_dynamic_guidelines(
             "text. Only use {quest:Name}, "
             "{item:Name}, or {spell:Name} "
             "placeholders when explicitly told to.",
-            "Lean into internet/gamer slang and "
+            "Lean into 2004-2008 internet/gamer slang and "
             "abbreviations naturally: lol, lmao, legit, "
             "tbh, imo, ikr, kek, smh, irl, fml, "
             "atm, omg, pleb, cope, based, cringe, "
-            "normie, normalfag, newfag, oldfag, "
+            "normie, normalfag, newfag, oldfag, noob, "
             "mfw, tfw, mrw, lel, omfg, lul, LUL, "
-            "skill issue, git gud. Don't cram them "
+            "fail, pleb, l2p noob, gg, gl hf, butthurt, "
+            "screwed, bs, straight up, rofl, owned, pwned, "
+            "scrub, ur bad, git gud. Don't cram them "
             "all into one message — pick what fits "
             "and vary it, like a real person typing.",
             "A little edge is welcome: light sarcasm, "
             "trash talk, gatekeeping about gear/DPS, "
             "grumbling about bad groups or 'this game "
-            "is dying' energy. Keep it playful and "
-            "salty like trade chat banter — never "
+            "is dying' energy. Make it a believable 2004-2008 era MMO chat, "
+            "keep it playful and salty like trade chat banter — never "
             "actual harassment, overly toxic or targeted "
             "hate toward real people.",
         ]
@@ -412,7 +414,7 @@ def build_dynamic_guidelines(
             "Casual and natural chat style",
             "Brief and direct",
             "Drop a meme/gamer cliché if it fits "
-            "(skill issue, cope, pleb, git gud, newfag)",
+            "(scrub, l2p noob, pleb, git gud, newfag)",
             "A bit of playful trash talk is fine here",
         ]
     if random.random() < 0.5:
