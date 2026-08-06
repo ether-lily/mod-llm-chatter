@@ -489,12 +489,9 @@ def _build_general_response_prompt(
         f"- Avoid talking like gen alpha, or young gen z, "
         f"act closer to Millennial\n"
         f"- strictly pre-2009 internet lexicon ONLY, "
-        f"zero modern, zoomer, or gen-alpha slang\n"
-        f"- Avoid modern social media phrasing\n"
-        f"- banned terms: cap, no cap, mid, rizz, sus, "
-        f"bet, ratio, cooked, flex, hit different, "
-        f"main character, rent free, letting them cook, "
-        f"skill issue, copium, W/L, low-key\n"
+        f"do not use modern, zoomer, or gen-alpha slang\n"
+        f"- Avoid modern social media phrasing all together\n"
+        f"- Authentic 2004-2009 era World of Warcraft General chat\n"
     )
     spices = pick_personality_spices(
         mode=mode, spice_count_override=_spice_count
@@ -659,12 +656,9 @@ def _build_general_followup_prompt(
         f"- Avoid talking like gen alpha, or young gen z, "
         f"act closer to Millennial\n"
         f"- strictly pre-2009 internet lexicon ONLY, "
-        f"zero modern, zoomer, or gen-alpha slang\n"
-        f"- Avoid modern social media phrasing\n"
-        f"- banned terms: cap, no cap, mid, rizz, sus, "
-        f"bet, ratio, cooked, flex, hit different, "
-        f"main character, rent free, letting them cook, "
-        f"skill issue, copium, W/L, low-key\n"
+        f"do not use modern, zoomer, or gen-alpha slang\n"
+        f"- Avoid modern social media phrasing all together\n"
+        f"- Authentic 2004-2009 era World of Warcraft General chat\n"
     )
     spices = pick_personality_spices(
         mode=mode, spice_count_override=_spice_count
@@ -1324,12 +1318,9 @@ def _build_general_continuation_prompt(
         f"- Avoid talking like gen alpha, or young gen z, "
         f"act closer to Millennial\n"
         f"- strictly pre-2009 internet lexicon ONLY, "
-        f"zero modern, zoomer, or gen-alpha slang\n"
-        f"- Avoid modern social media phrasing\n"
-        f"- banned terms: cap, no cap, mid, rizz, sus, "
-        f"bet, ratio, cooked, flex, hit different, "
-        f"main character, rent free, letting them cook, "
-        f"skill issue, copium, W/L, low-key\n"
+        f"do not use modern, zoomer, or gen-alpha slang\n"
+        f"- Avoid modern social media phrasing all together\n"
+        f"- Authentic 2004-2009 era World of Warcraft General chat\n"
     )
     if remaining_messages <= 2:
         prompt += (
