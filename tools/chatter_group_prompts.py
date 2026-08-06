@@ -228,8 +228,8 @@ def build_bot_greeting_prompt(
             "party chat — casual, a bit slangy, "
             "maybe a little salty. Internet "
             "abbreviations and gamer shorthand are "
-            "totally normal here (lol, ngl, tbh, "
-            "gg, skill issue, mid, etc.) — this "
+            "totally normal here (lol, ikr, tbh, "
+            "gg, skill issue, kek, imo, etc.) — this "
             "isn't formal writing."
         )
 
@@ -512,8 +512,8 @@ def build_bot_welcome_prompt(
             "party chat — casual, a bit slangy, "
             "maybe a little salty. Internet "
             "abbreviations and gamer shorthand are "
-            "totally normal here (lol, ngl, tbh, "
-            "gg, skill issue, mid, etc.) — this "
+            "totally normal here (lol, ikr, tbh, "
+            "gg, skill issue, kek, imo, etc.) — this "
             "isn't formal writing."
         )
 
