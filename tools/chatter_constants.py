@@ -1610,12 +1610,12 @@ AMBIENT_CHAT_TOPICS = [
     # Environment / Zone
     'commenting on the scenery or surroundings',
     'noticing something interesting in the zone',
-    'remarking on the local wildlife or creatures',
+    'remarking on the local mobs or creatures',
     'observing the landscape or terrain',
     # Weather / Time
     'commenting on the weather',
     'noticing the time of day',
-    'mentioning how the light looks',
+    'mentioning how the lighting/visuals of the zone looks',
     # Class / Race
     'mentioning something about their class abilities',
     'mentioning something about their race or class perks',
@@ -1624,7 +1624,7 @@ AMBIENT_CHAT_TOPICS = [
     # Food / Drink
     'asking if anyone has food or water',
     'complaining about being hungry or thirsty',
-    'mentioning a favorite food or drink',
+    'mentioning a food or drink stats',
     # Travel / Mounts
     'talking about their mount',
     'commenting on how far they have walked',
@@ -2072,6 +2072,13 @@ TONES = [
     "meme-brained",
     "4chan/Teamspeak/Discord shitposter",
     "millennial age. avoid zoomer/gen alpha slang",
+    "stereotypical MMO player",
+    "typical 2000 to 2008 PC gamer",
+    "leetspeak user",
+    "fatigued guild officer",
+    "edge-lord contrarian",
+    "nostalgic elitist",
+    "unironic 2000s netspeak user",
 ]
 
 # Mood variations - the emotional angle of the message
@@ -2169,12 +2176,12 @@ CREATIVE_TWISTS = [
     "Make a self-deprecating joke",
     "Find an absurd silver lining",
     # Internet slang / meme twists
-    "Use a gamer meme phrase naturally (skill issue, rekt, owned, cope, based, git gud)",
+    "Use a gamer meme phrase naturally (noob, fail, rekt, owned, ur bad, based, gg, gl hf, git gud)",
     "Type in all-lowercase for effect",
-    "Give a mock-serious 'skill issue' callout",
+    "Give a mock-serious 'ur bad' or 'l2p noob' callout",
     "React like it's a 4chan/Discord comment, not a tavern conversation",
     "Reference stream/Discord/Twitch/4chan culture briefly",
-    "Gatekeep something minor as a joke (e.g. 'real ones remember...')",
+    "Gatekeep something minor as a joke (e.g. 'oldschool players remember...')",
 ]
 
 GOSSIP_CREATIVE_TWISTS = [
