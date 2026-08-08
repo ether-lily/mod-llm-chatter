@@ -314,33 +314,39 @@ def build_dynamic_guidelines(
         ]
     else:
         guidelines = [
-            "Sound like a real, slightly-online 2004-2008 WoW "
-            "player typing in chat — not an NPC, not "
-            "a tour guide, not flowery or poetic",
+            "Sound like a real, slightly-online 2008 WoW "
+            "player typing in chat in the year 2008 — not an NPC, "
+            "not a tour guide, not flowery or poetic",
             "NEVER use brackets [] around names "
             "(quests, items, zones, creatures, NPCs, "
             "factions) - write everything as plain "
             "text. Only use {quest:Name}, "
             "{item:Name}, or {spell:Name} "
             "placeholders when explicitly told to.",
-            "Lean into 2004-2008 internet/gamer slang and "
+            "Lean into 2008 internet gamer slang and "
             "abbreviations naturally: lol, lmao, legit, "
             "tbh, imo, ikr, kek, smh, irl, fml, "
             "atm, omg, pleb, cope, based, cringe, "
-            "normie, normalfag, newfag, oldfag, noob, "
+            "normie, noob, noob, omw, nvm, "
             "mfw, tfw, mrw, lel, omfg, lul, LUL, "
             "fail, pleb, l2p noob, gg, gl hf, butthurt, "
             "screwed, bs, straight up, rofl, owned, pwned, "
             "scrub, ur bad, git gud. Don't cram them "
             "all into one message — pick what fits "
-            "and vary it, like a real person typing.",
+            "and vary it, like a real person typing in 2008.",
             "A little edge is welcome: light sarcasm, "
             "trash talk, gatekeeping about gear/DPS, "
             "grumbling about bad groups or 'this game "
-            "is dying' energy. Make it a believable 2004-2008 era MMO chat, "
+            "is dying' energy. Make it a believable 2008 era MMO chat, "
             "keep it playful and salty like trade chat banter — never "
-            "actual harassment, overly toxic or targeted "
+            "actual harassment, slurs or targeted "
             "hate toward real people.",
+            "Act as if the year is 2008. "
+            "Avoid slang or phrases after 2008. "
+            "strictly pre-2009 internet lexicon ONLY, "
+            "do not use modern, zoomer, or gen-alpha slang. "
+            "Avoid modern social media phrasing. "
+            "Authentic 2004-2009 era World of Warcraft player.",
         ]
 
     length_pool = RP_LENGTH_HINTS if is_rp else LENGTH_HINTS
@@ -413,8 +419,8 @@ def build_dynamic_guidelines(
             "Can include a typo for realism",
             "Casual and natural chat style",
             "Brief and direct",
-            "Drop a meme/gamer cliché if it fits "
-            "(scrub, l2p noob, pleb, git gud, newfag)",
+            "Drop a pre-2009 meme/gamer cliché if it fits "
+            "(scrub, l2p noob, pleb, git gud, ur bad)",
             "A bit of playful trash talk is fine here",
         ]
     if random.random() < 0.5:
@@ -475,7 +481,7 @@ def build_plain_statement_prompt(
         parts.append(
             f"Generate a brief WoW General chat message "
             f"from a player in {bot['zone']}. Speak as "
-            f"a player talking about the game — not "
+            f"a player talking about the game in 2008 — not "
             f"roleplaying your character."
         )
 
@@ -548,7 +554,7 @@ def build_plain_statement_prompt(
         )
     else:
         guidelines.append(
-            "Speak as a player discussing the game — "
+            "Speak as a player in 2008 discussing the game — "
             "you can mention your race, class, zone, "
             "or abilities, but as a player, not as "
             "your character roleplaying"
@@ -1353,7 +1359,7 @@ def build_gossip_statement_prompt(
         )
     else:
         guidelines.append(
-            "Speak as a player discussing the game, not as "
+            "Speak as a player discussing the game in 2008, not as "
             "the character roleplaying"
         )
     parts.append("Guidelines: " + "; ".join(guidelines))
