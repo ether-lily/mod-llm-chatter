@@ -224,13 +224,14 @@ def build_bot_greeting_prompt(
         )
     else:
         style_guide = (
-            "Sound like a real 2004-2008 WoW player in "
+            "Sound like a real 2008 WoW player in "
             "party chat — casual, a bit slangy, "
-            "maybe a little salty. Internet "
+            "maybe a little salty. 2008 internet "
             "abbreviations and gamer shorthand are "
             "totally normal here (lol, ikr, tbh, "
             "gg, scrub, kek, imo, etc.) — this "
-            "isn't formal writing."
+            "isn't formal writing. "
+            "It is the year 2008, Don't use slang from after 2009."
         )
 
     # Location context: BG > dungeon > zone flavor
@@ -404,6 +405,7 @@ def build_bot_greeting_prompt(
             f"- Do NOT begin with the player's name\n"
             f"- Don't repeat or echo greetings "
             f"already in the chat history above\n"
+            f"- It is the year 2008, don't use phrases from after 2009\n"
         )
     else:
         prompt += (
@@ -432,6 +434,7 @@ def build_bot_greeting_prompt(
             f"- Don't mention your class or race\n"
             f"- Don't repeat or echo greetings "
             f"already in the chat history above\n"
+            f"- It is the year 2008, don't use phrases from after 2009\n"
         )
 
     if use_player_name:
@@ -508,13 +511,14 @@ def build_bot_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a real 2004-2008 WoW player in "
-            "party chat — casual, a bit slangy, "
-            "maybe a little salty. Internet "
+            "Sound like a real 2008 WoW player in "
+            "party chat — casual, a bit 2008 slangy, "
+            "maybe a little salty. 2008 internet "
             "abbreviations and gamer shorthand are "
             "totally normal here (lol, ikr, tbh, "
             "gg, scrub, kek, imo, etc.) — this "
-            "isn't formal writing."
+            "isn't formal writing. "
+            "Speak as if it's the year 2008."
         )
 
     prompt = (
@@ -647,13 +651,14 @@ def build_batch_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a real 2004-2008 WoW player in "
-            "party chat — casual, a bit slangy, "
-            "maybe a little salty. Internet "
+            "Sound like a real 2008 WoW player in "
+            "party chat — casual, a bit 2008 slangy, "
+            "maybe a little salty. 2008 internet "
             "abbreviations and gamer shorthand are "
-            "totally normal here (lol, kek, tbh, "
-            "gg, scrub, imo, etc.) — this "
-            "isn't formal writing."
+            "totally normal here (lol, ikr, tbh, "
+            "gg, scrub, kek, imo, etc.) — this "
+            "isn't formal writing. "
+            "Speak as if it's the year 2008."
         )
 
     names_str = ', '.join(new_bot_names)
@@ -862,7 +867,7 @@ def build_kill_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the creature by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -1002,7 +1007,7 @@ def build_loot_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the item by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -1109,7 +1114,7 @@ def build_combat_reaction_prompt(
         f"remark (under 50 characters).\n"
         f"Rules:\n"
         f"- Extremely brief, 3-8 words max\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the enemy by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -1230,7 +1235,7 @@ def build_death_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Mention {dead_name} by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -1312,7 +1317,7 @@ def build_levelup_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention level {new_level}\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -1421,7 +1426,7 @@ def build_quest_complete_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the quest by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -1528,7 +1533,7 @@ def build_quest_objectives_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the quest by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't attribute the completion to "
@@ -1648,7 +1653,7 @@ def build_achievement_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the achievement by name\n"
     )
     if not bot_is_achiever:
@@ -1747,7 +1752,7 @@ def build_group_achievement_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the achievement by name\n"
         f"- You may mention a few names but don't "
         f"list everyone\n"
@@ -2272,7 +2277,7 @@ def build_player_response_prompt(
         f"Reply in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Respond to what {player_name} said\n"
         f"{address_hint}"
         f"- Reflect your personality traits\n"
@@ -2365,7 +2370,7 @@ def build_resurrect_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Express gratitude, relief, or drama\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -2634,7 +2639,7 @@ def build_quest_accept_reaction_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention the quest by name\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -2738,7 +2743,7 @@ def build_quest_accept_batch_prompt(
         f"Say a reaction in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention one quest name at most\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
@@ -3096,7 +3101,7 @@ def build_corpse_run_reaction_prompt(
         f"Say something in party chat.\n"
         f"{_pick_length_hint(mode)}\n"
         f"Rules:\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Reflect your personality traits\n"
         f"- Don't repeat jokes or themes "
         f"already said in chat"
@@ -3254,7 +3259,7 @@ def build_oom_callout_prompt(
         f"Say ONE short sentence in party chat.\n"
         f"Rules:\n"
         f"- Extremely brief, 3-10 words\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Reflect your personality traits"
     )
     return append_json_instruction(
@@ -3320,7 +3325,7 @@ def build_aggro_loss_callout_prompt(
         f"Say ONE short sentence in party chat.\n"
         f"Rules:\n"
         f"- Extremely brief, 3-10 words\n"
-        f"- No quotes, no emojis\n"
+        f"- No quotes, no emojis, no slang after 2009\n"
         f"- Can mention {target_name} or "
         f"{aggro_target} by name\n"
         f"- Reflect your personality traits"
@@ -3374,7 +3379,7 @@ def build_precache_combat_pull_prompt(
         "Rules:\n"
         "- Must include {target} exactly once\n"
         "- Reflect your personality\n"
-        "- No quotes, no emojis\n"
+        "- No quotes, no emojis, no slang after 2009\n"
         "- Put ONLY the spoken words in the "
         "\"message\" JSON field"
     )
@@ -3471,7 +3476,7 @@ def build_precache_state_prompt(
 
     prompt += (
         "- Reflect your personality\n"
-        "- No quotes, no emojis\n"
+        "- No quotes, no emojis, no slang after 2009\n"
         "- Put ONLY the spoken words in the "
         "\"message\" JSON field"
     )
@@ -3539,7 +3544,7 @@ def build_precache_spell_support_prompt(
         "- Do NOT invent spell names — use {spell} "
         "for the spell name\n"
         "- Reflect your personality\n"
-        "- No quotes, no emojis\n"
+        "- No quotes, no emojis, no slang after 2009\n"
         "- Put ONLY the spoken words in the "
         "\"message\" JSON field"
     )
@@ -3653,7 +3658,7 @@ def build_precache_spell_offensive_prompt(
         "supportive\n"
         + style_rule +
         "- Reflect your personality\n"
-        "- No quotes, no emojis\n"
+        "- No quotes, no emojis, no slang after 2009\n"
         "- Put ONLY the spoken words in the "
         "\"message\" JSON field"
     )
@@ -3791,9 +3796,9 @@ def build_nearby_object_reaction_prompt(
     else:
         style = (
             "Make a brief comment about what you see "
-            "like a real WoW player typing in party "
+            "like a real 2008 WoW player typing in party "
             "chat — casual, maybe a little slangy or "
-            "sarcastic. Natural reaction, as a player "
+            "sarcastic. Natural reaction, as a player in 2008 "
             "not a character."
         )
     prompt += (
@@ -4155,7 +4160,7 @@ def build_player_msg_conversation_prompt(
     else:
         parts.append(
             "\nGuidelines: Sound like normal "
-            "people chatting in a game; casual "
+            "people chatting in a game in 2008; casual "
             f"and relaxed; {length_hint}; "
         )
 
