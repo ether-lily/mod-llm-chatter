@@ -2306,7 +2306,7 @@ LLMChatter.Memory.MaxPerBotPlayer = 30
 #       after prompt or trait system changes.
 #       Default: 1
 #
-LLMChatter.Memory.IdentityVersion = 1
+LLMChatter.Memory.IdentityVersion = 1.1
 
 #
 #   LLMChatter.Memory.PlayerMsgMaxLength
