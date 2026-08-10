@@ -224,9 +224,14 @@ def build_bot_greeting_prompt(
         )
     else:
         style_guide = (
-            "Sound like a normal person chatting "
-            "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "Sound like a real 2008 WoW player in "
+            "party chat — casual, a bit slangy, "
+            "maybe a little salty. 2008 era internet "
+            "abbreviations and gamer shorthand are "
+            "totally normal here (lol, ikr, tbh, "
+            "gg, scrub, kek, imo, etc.) — this "
+            "isn't formal writing. "
+            "It is the year 2008, Don't use slang from after 2009."
         )
 
     # Location context: BG > dungeon > zone flavor
@@ -504,9 +509,14 @@ def build_bot_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a normal person chatting "
-            "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "Sound like a real 2008 WoW player in "
+            "party chat — casual, a bit 2008 slangy, "
+            "maybe a little salty. 2008 era internet "
+            "abbreviations and gamer shorthand are "
+            "totally normal here (lol, ikr, tbh, "
+            "gg, scrub, kek, imo, etc.) — this "
+            "isn't formal writing. "
+            "Speak as if it's the year 2008."
         )
 
     prompt = (
@@ -639,9 +649,14 @@ def build_batch_welcome_prompt(
         )
     else:
         style_guide = (
-            "Sound like a normal person chatting "
-            "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "Sound like a real 2008 WoW player in "
+            "party chat — casual, a bit 2008 slangy, "
+            "maybe a little salty. 2008 era internet "
+            "abbreviations and gamer shorthand are "
+            "totally normal here (lol, ikr, tbh, "
+            "gg, scrub, kek, imo, etc.) — this "
+            "isn't formal writing. "
+            "Speak as if it's the year 2008."
         )
 
     names_str = ', '.join(new_bot_names)
@@ -3779,9 +3794,10 @@ def build_nearby_object_reaction_prompt(
     else:
         style = (
             "Make a brief comment about what you see "
-            "as a regular WoW player — could be any "
-            "age, mature and grounded. Natural "
-            "reaction, as a player not a character."
+            "like a real 2008 WoW player typing in party "
+            "chat — casual, maybe a little slangy or "
+            "sarcastic. Natural reaction, as a player in 2008, "
+            "not a character."
         )
     prompt += (
         f"\nYou notice the following nearby:\n"
@@ -4142,7 +4158,7 @@ def build_player_msg_conversation_prompt(
     else:
         parts.append(
             "\nGuidelines: Sound like normal "
-            "people chatting in a game; casual "
+            "people chatting in a game in 2008; casual "
             f"and relaxed; {length_hint}; "
         )
 
