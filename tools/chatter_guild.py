@@ -324,27 +324,22 @@ def _build_guild_prompt(
     lines.extend(
         _guild_history_prompt_lines(history_context)
     )
-    # Review #3: keep content within the speaker's OWN class/race idiom — the
-    # model otherwise borrows another class's fantasy (a warlock invoking
-    # ancestors, a death knight using fel, etc.).
+    # Review #3: keep content within the context of a 2008 WoW player.
     lines.append(
-        "Speak only in the idiom that fits your own race and class. Do NOT "
-        "borrow another class's powers or imagery — do not invoke spirits, "
-        "ancestors, the Light, the elements, nature, or fel unless that "
-        "genuinely belongs to who you are."
+        "Speak as if you are a real WoW player in 2008. "
+        "No quotes, no emojis, no slang from after 2008."
     )
     lines.append(
-        "Stay fully in character — you ARE this person in Azeroth, "
-        "speaking to your guild. No fourth-wall breaks and no "
-        "out-of-character or game-mechanic talk. NEVER use words "
+        "Stay fully in character as a player — you ARE this gamer in 2008, "
+        "speaking to your guild, in-game. game-mechanic talk, "
         "like grinding, pulls, DPS, specs, talents, loot, mobs, "
-        "XP, levels, rotations, addons, or any reference to the "
-        "player behind the screen. Speak of foes, the road, your "
-        "craft and your calling — not game systems."
+        "XP, levels, rotations, addons, are totally fine here. "
+        "references to other guild members or players behind the screen "
+        "are also normal here, as are the game systems."
     )
     lines.append(
         "Write ONE casual, in-character line for guild chat, the "
-        "way this person would actually speak. No quotation marks, "
+        "way this player in 2008 would actually speak in-game. No quotation marks, "
         "no name prefix, no roleplay asterisks, no emotes or "
         "actions — just the spoken line."
     )
