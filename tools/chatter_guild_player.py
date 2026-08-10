@@ -422,10 +422,6 @@ def _shared_prompt_lines(
         "Each line is spoken text only: no narrator "
         "text, roleplay asterisks, slash commands, "
         "emotes, or name prefixes.",
-        "Stay fully in Azeroth and avoid game-mechanic "
-        "terms such as DPS, specs, talents, loot, mobs, "
-        "XP, levels, rotations, addons, or players "
-        "behind screens.",
         "Never exceed 150 characters in one message.",
     ])
     if callback_requested:
