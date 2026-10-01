@@ -399,8 +399,11 @@ def build_dynamic_guidelines(
             "{item:Name}, or {spell:Name} "
             "placeholders when explicitly told to.",
             "Prefer full words over internet slang "
+            "Sound like a real, slightly-online 2008 WoW "
+            "player typing in chat in the year 2008 — not an NPC, "
+            "not a tour guide, not flowery or poetic"
             "— use abbreviations sparingly, not in "
-            "every message (lol, omg, ngl, tbh are "
+            "every message (lol, omg, tbh are "
             "ok occasionally). Basic WoW terms are "
             "always fine (dps, tank, healer, gg, "
             "buff, nerf, aggro).",
@@ -531,7 +534,7 @@ def build_plain_statement_prompt(
         parts.append(
             f"Generate a brief WoW General chat message "
             f"from a player in {bot['zone']}. Speak as "
-            f"a player talking about the game — not "
+            f"a player talking about the game in 2008 — not "
             f"roleplaying your character."
         )
 
@@ -608,7 +611,7 @@ def build_plain_statement_prompt(
         )
     else:
         guidelines.append(
-            "Speak as a player discussing the game — "
+            "Speak as a player discussing the game in 2008 — "
             "you can mention your race, class, zone, "
             "or abilities, but as a player, not as "
             "your character roleplaying"
