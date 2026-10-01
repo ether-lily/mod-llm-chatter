@@ -394,30 +394,29 @@ def _build_guild_prompt(
     lines.extend(
         _guild_history_prompt_lines(history_context, mode)
     )
-    # Review #3: keep content within the speaker's OWN class/race idiom — the
-    # model otherwise borrows another class's fantasy (a warlock invoking
-    # ancestors, a death knight using fel, etc.).
+    # Review #3: keep content within the context of a 2008 WoW player.
     if roleplay:
         lines.append(
-            "Speak only in the idiom that fits your own race and class. "
-            "Do not borrow another class's powers or beliefs."
+            "Speak as if you are a real WoW player in 2008. "
+            "No quotes, no emojis, no slang from after 2008."
         )
         lines.append(
-            "Stay fully in character as this person in Azeroth, speaking "
-            "to your guild. No fourth-wall breaks or out-of-character or "
-            "game-mechanic talk. NEVER use words like grinding, pulls, "
-            "DPS, specs, talents, loot, mobs, XP, levels, rotations, "
-            "addons, or any reference to the player behind the screen. "
-            "Speak of foes, the road, your craft, and your calling, not "
-            "game systems."
+            "Stay fully in character as a player — you ARE this gamer in 2008, "
+            "speaking to your guild, in-game. game-mechanic talk, "
+            "like grinding, pulls, DPS, specs, talents, loot, mobs, "
+            "XP, levels, rotations, addons, are totally fine here. "
+            "references to other guild members or players behind the screen "
+            "are also normal here, as are the game systems."
         )
         lines.append(
-            "Write ONE casual, in-character guild-chat line. No quotation "
+            "Write ONE casual, in-character guild-chat line. "
+            "the way this player in 2008 would actually speak in-game. No quotation "
             "marks, name prefix, roleplay asterisks, emotes, or actions."
         )
     else:
         lines.append(
-            "Write ONE natural guild-chat line. No quotation marks, name "
+            "Write ONE natural guild-chat line. "
+            "the way this player in 2008 would actually speak in-game. No quotation marks, name "
             "prefix, roleplay asterisks, emotes, or actions."
         )
     # Length control mirrors the General channel: a char-range target plus a
