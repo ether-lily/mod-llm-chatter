@@ -1522,7 +1522,7 @@ LLMChatter.GroupChatter.IdleCooldown = 40
 #       Boss and rare kills always trigger (100%).
 #       Default: 20
 #
-LLMChatter.GroupChatter.KillChanceNormal = 20
+LLMChatter.GroupChatter.KillChanceNormal = 5
 
 #
 #   LLMChatter.GroupChatter.KillCooldown
@@ -1531,7 +1531,7 @@ LLMChatter.GroupChatter.KillChanceNormal = 20
 #       Boss/rare kills bypass this cooldown.
 #       Default: 120
 #
-LLMChatter.GroupChatter.KillCooldown = 120
+LLMChatter.GroupChatter.KillCooldown = 240
 
 #
 #   LLMChatter.GroupChatter.KillBurstWindow [BRIDGE]
@@ -1592,7 +1592,7 @@ LLMChatter.GroupChatter.CorpseRunCooldown = 120
 #       quality item triggers a group reaction.
 #       Default: 20
 #
-LLMChatter.GroupChatter.LootChanceGreen = 20
+LLMChatter.GroupChatter.LootChanceGreen = 10
 
 #
 #   LLMChatter.GroupChatter.LootChanceBlue
@@ -1600,7 +1600,7 @@ LLMChatter.GroupChatter.LootChanceGreen = 20
 #       quality item triggers a group reaction.
 #       Default: 60
 #
-LLMChatter.GroupChatter.LootChanceBlue = 60
+LLMChatter.GroupChatter.LootChanceBlue = 45
 
 #
 #   LLMChatter.GroupChatter.LootChancePurple
@@ -1649,7 +1649,7 @@ LLMChatter.GroupChatter.ResurrectCooldown = 30
 #       triggers a group reaction.
 #       Default: 20
 #
-LLMChatter.GroupChatter.SpellCastChance = 30
+LLMChatter.GroupChatter.SpellCastChance = 5
 
 #
 #   LLMChatter.GroupChatter.SpellCastCooldown
@@ -1658,7 +1658,7 @@ LLMChatter.GroupChatter.SpellCastChance = 30
 #       heavy moments.
 #       Default: 10
 #
-LLMChatter.GroupChatter.SpellCastCooldown = 10
+LLMChatter.GroupChatter.SpellCastCooldown = 15
 
 #
 #   LLMChatter.GroupChatter.StateCalloutEnable
@@ -1730,7 +1730,7 @@ LLMChatter.GroupChatter.NearbyObjectEnable = 1
 #       triggers a comment. Scanned periodically per group.
 #       Default: 15
 #
-LLMChatter.GroupChatter.NearbyObjectChance = 20
+LLMChatter.GroupChatter.NearbyObjectChance = 15
 
 #
 #   LLMChatter.GroupChatter.NearbyObjectCheckInterval
@@ -1940,7 +1940,7 @@ LLMChatter.GroupChatter.BotQuestionCheckInterval = 30
 #       triggers a group reaction.
 #       Default: 70
 #
-LLMChatter.GroupChatter.QuestAcceptChance = 50
+LLMChatter.GroupChatter.QuestAcceptChance = 25
 
 #
 #   LLMChatter.GroupChatter.QuestAcceptCooldown
@@ -2674,7 +2674,7 @@ LLMChatter.RaidChatter.IdleCooldown = 20
 #       Only applies in roleplay mode.
 #       Default: 20
 #
-LLMChatter.ActionChance = 10
+LLMChatter.ActionChance = 0
 
 #
 #   LLMChatter.ActionAsEmote.Enable
@@ -2699,7 +2699,7 @@ LLMChatter.ActionAsEmote.Enable = 1
 #       Lower values improve speed on smaller models.
 #       Default: 30
 #
-LLMChatter.EmoteChance = 20
+LLMChatter.EmoteChance = 5
 
 #
 #   LLMChatter.RaceLoreChance
@@ -2707,7 +2707,7 @@ LLMChatter.EmoteChance = 20
 #       is injected into chatter prompts (roleplay mode only).
 #       Default: 15
 #
-LLMChatter.RaceLoreChance = 15
+LLMChatter.RaceLoreChance = 5
 
 #
 #   LLMChatter.ConversationPacing
@@ -3125,7 +3125,7 @@ LLMChatter.Memory.MaxPerBotPlayer = 30
 #       after prompt or trait system changes.
 #       Default: 1
 #
-LLMChatter.Memory.IdentityVersion = 1
+LLMChatter.Memory.IdentityVersion = 3
 
 #
 #   LLMChatter.Memory.PlayerMsgMaxLength
