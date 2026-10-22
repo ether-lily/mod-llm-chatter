@@ -2036,7 +2036,7 @@ _AMBIENT_CHAT_TOPICS_SHARED = [
     # Weather / Time
     'commenting on the weather',
     'noticing the time of day',
-    'mentioning how the light looks',
+    'mentioning how the lighting/visuals of the zone looks',
     # Class / Race
     'mentioning something about their class abilities',
     'mentioning something about their race or class perks',
@@ -2794,6 +2794,23 @@ TONES = [
     "patient and even-keeled",
     "dry and world-weary",
     "mild and unpretentious",
+    # Online/internet-culture tones
+    "chronically online",
+    "salty and sarcastic",
+    "done with everyone's nonsense",
+    "gremlin energy, unhinged but harmless",
+    "trash-talking but good-natured",
+    "smug about being right",
+    "bit of a gatekeeper",
+    "2008 meme-brained",
+    "4chan/Teamspeak/Discord shitposter",
+    "stereotypical 2008 MMO player",
+    "typical 2000 to 2008 PC gamer",
+    "leetspeak user",
+    "fatigued guild officer",
+    "edge-lord contrarian",
+    "nostalgic elitist",
+    "unironic 2000s netspeak user",
 ]
 
 # Mood variations - the emotional angle of the message
@@ -2826,6 +2843,14 @@ MOODS = [
     "finding everything hilarious",
     "cracking wise",
     "dry and snarky",
+    "just being a little silly",
+    # Online/internet-culture moods
+    "roasting someone playfully",
+    "trolling a little",
+    "unimpressed and vocal about it",
+    "salty about RNG",
+    "smugly correct",
+    "shitposter",
 ]
 
 # Creative twists - random modifiers to push creativity (picked ~30% of the time)
@@ -2875,13 +2900,20 @@ CREATIVE_TWISTS = [
     "Add a random lol or haha mid-sentence",
     "Use excessive punctuation for one thing!!!",
     "Be overly casual with spelling",
-    "Use gaming slang naturally",
+    "Use 2008 gaming slang naturally",
     # Humor twists
     "Make a joke about the situation",
     "Say something sarcastically obvious",
     "Exaggerate wildly for comic effect",
     "Make a self-deprecating joke",
     "Find an absurd silver lining",
+    # Internet slang / meme twists
+    "Use a 2008 gamer meme phrase naturally (noob, fail, rekt, owned, ur bad, gg, git gud)",
+    "Type in all-lowercase for effect",
+    "Give a mock-serious 'ur bad' or 'l2p noob' (learn to play) callout",
+    "React like it's a 4chan/Discord comment, not a tavern conversation",
+    "Reference stream/Discord/Twitch/4chan culture briefly",
+    "Gatekeep something minor as a joke (e.g. 'oldschool players remember...')",
 ]
 
 GOSSIP_CREATIVE_TWISTS = [
@@ -3031,13 +3063,24 @@ MESSAGE_CATEGORIES = [
     "appreciating how far they've come",
     "bittersweet reflection on the past",
     "wishing to relive a memory",
-    # Contemplative
-    "philosophical moment about the game world",
-    "quiet reflection",
-    "finding peace in the moment",
+    # Contemplative (kept brief, not poetic)
+    "quick reflection on the game world",
     "appreciating the simple things",
     "moment of gratitude",
     "feeling content",
+    # Salt, banter, and gamer opinions
+    "hot take about the game or class balance",
+    "trash talking a player or a mob, playfully",
+    "gatekeeping opinion about 'real' players or vanilla/classic",
+    "backhanded compliment",
+    "roasting a bad pull or bad decision, played for laughs",
+    "pre-2009 meme reference or inside joke about the game",
+    "complaining about queue times or bad RNG",
+    "noob style callout, lighthearted",
+    "copypasta-style short rant",
+    "reacting like a 4chan or Discord comment",
+    "smug 'told you so' moment",
+    "nostalgia bait about vanilla/classic/old content",
     # Misc
     "sharing a random fact",
     "expressing boredom",
