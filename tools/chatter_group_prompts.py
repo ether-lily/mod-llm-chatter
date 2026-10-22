@@ -367,7 +367,13 @@ def build_bot_greeting_prompt(
         style_guide = (
             "Sound like a normal person chatting "
             "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "a little slangy, but not excessively. "
+            "Sound like a real 2008 WoW player in "
+            "party chat — maybe a little salty. "
+            "2008 era internet abbreviations and "
+            "gamer shorthand are okay here. — this "
+            "isn't formal writing. "
+            "It is the year 2008, Don't use slang from after 2009."
         )
 
     # Location context: BG > dungeon > zone flavor
@@ -654,7 +660,13 @@ def build_bot_welcome_prompt(
         style_guide = (
             "Sound like a normal person chatting "
             "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "a little slangy, but not excessively. "
+            "Sound like a real 2008 WoW player in "
+            "party chat — maybe a little salty. "
+            "2008 era internet abbreviations and "
+            "gamer shorthand are okay here. — this "
+            "isn't formal writing. "
+            "It is the year 2008, Don't use slang from after 2009."
         )
 
     prompt = (
@@ -783,7 +795,13 @@ def build_batch_welcome_prompt(
         style_guide = (
             "Sound like a normal person chatting "
             "in a game. Casual but natural, "
-            "no excessive slang or abbreviations."
+            "a little slangy, but not excessively. "
+            "Sound like a real 2008 WoW player in "
+            "party chat — maybe a little salty. "
+            "2008 era internet abbreviations and "
+            "gamer shorthand are okay here. — this "
+            "isn't formal writing. "
+            "It is the year 2008, Don't use slang from after 2009."
         )
 
     names_str = ', '.join(new_bot_names)
